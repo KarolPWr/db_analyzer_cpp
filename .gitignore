@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+#USER
+*.db
+*.code-wrokspace
