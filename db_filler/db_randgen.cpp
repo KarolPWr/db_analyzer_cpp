@@ -6,8 +6,6 @@ namespace db_randgen{
 class DbRandgen
 {
     public:
-    sqlite3& local_db;
-
     DbRandgen();
     DbRandgen(sqlite3* DB, std::string db_name);
     ~DbRandgen();
@@ -25,7 +23,7 @@ DbRandgen::DbRandgen()
     std::cout<< "Created class DbRandgen" << std::endl;
 }
 
-DbRandgen::DbRandgen(sqlite3* DB, std::string db_name): local_db(DB)
+DbRandgen::DbRandgen(sqlite3* DB, std::string db_name)
 {
     std::cout<< "Created class DbRandgen DB name: " << db_name << std::endl;
 }
